@@ -1,0 +1,68 @@
+Source: airin
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@airincoin.info>
+Uploaders: Holger Schinzel <holger@airincoin.info>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.airincoin.info/
+Vcs-Git: git://github.com/airincoin/airin.git
+Vcs-Browser: https://github.com/airincoin/airin
+
+Package: airind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Airin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Airin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Airin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, airind, and the CLI tool
+ airin-cli to interact with the daemon.
+
+Package: airin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Airin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Airin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Airin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Airin-Qt, a GUI for Airin based on Qt.
+
+Package: airin-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Airin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Airin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Airin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides airin-tx, a command-line transaction creation
+ tool which can be used without a airin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

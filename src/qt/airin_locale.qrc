@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/airin_bg.qm</file>
+        <file alias="de">locale/airin_de.qm</file>
+        <file alias="en">locale/airin_en.qm</file>
+        <file alias="es">locale/airin_es.qm</file>
+        <file alias="fi">locale/airin_fi.qm</file>
+        <file alias="fr">locale/airin_fr.qm</file>
+        <file alias="it">locale/airin_it.qm</file>
+        <file alias="ja">locale/airin_ja.qm</file>
+        <file alias="pl">locale/airin_pl.qm</file>
+        <file alias="pt">locale/airin_pt.qm</file>
+        <file alias="ru">locale/airin_ru.qm</file>
+        <file alias="sk">locale/airin_sk.qm</file>
+        <file alias="sv">locale/airin_sv.qm</file>
+        <file alias="vi">locale/airin_vi.qm</file>
+        <file alias="zh_CN">locale/airin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/airin_zh_TW.qm</file>
+    </qresource>
+</RCC>
