@@ -66,8 +66,8 @@
 using namespace std;
 
 namespace {
-    const int MAX_OUTBOUND_CONNECTIONS = 8;
-    const int MAX_OUTBOUND_MASTERNODE_CONNECTIONS = 20;
+    const int MAX_OUTBOUND_CONNECTIONS = 256;
+    const int MAX_OUTBOUND_MASTERNODE_CONNECTIONS = 256;
 
     struct ListenSocket {
         SOCKET socket;
